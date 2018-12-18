@@ -2,8 +2,8 @@ version: '3.3'
 
 services:
   gitlab:
-    image: gitlab/gitlab-ce:8.5.8-ce.0
-    ports: [ "833380:80", "8122:22" ]
+    image:  gitlab/gitlab-ce:8.5.8-ce.0
+    ports: [ "8180:80", "8122:22" ]
     volumes:
     - gitlab-conf:/etc/gitlab
     - gitlab-log:/var/log/gitlab
@@ -15,3 +15,4 @@ volumes:
   gitlab-conf:
   gitlab-log:
   gitlab-data:
+
