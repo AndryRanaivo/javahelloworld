@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts
 USER root
-RUN addgroup -g 999 docker && usermod -aG docker jenkins
+RUN addgroup --gid 999 docker && usermod -aG docker jenkins
 RUN curl https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz | tar xvz -C /tmp/ && mv /tmp/docker/docker /usr/bin/docker
 USER jenkins
