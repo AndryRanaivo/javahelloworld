@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    image: treeptik/jenkins:lts
     ports: [ "8280:8080" ]
     volumes:
     - jenkins:/var/jenkins_home
